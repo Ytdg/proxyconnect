@@ -143,7 +143,7 @@ func main() {
 }
 
 func (dns ProxyServ) String() string {
-	return "domain:" + dns.name + "/ip DNS:" + strconv.Itoa((int)(dns.ip))
+	return "domain:" + dns.name + "/ip DNS:" + strconv.Itoa((int)(dns.ip)) //ответ DNS
 }
 func (p Client) String() string {
 	str := "ip:" + strconv.Itoa((int)(p.dIp)) + "/id:" + strconv.Itoa(p.id) + "/domain:" + p.nameDomain
